@@ -1,0 +1,408 @@
+@import 'base.styl'
+@import 'slider-base.styl'
+
+
+/* Estilos Fundación Porvenir y Felicidad */
+
+#container
+    width 100%
+    max-width 2000px
+    height auto
+    margin 0 auto
+/* Contenedor General*/
+/******************************************/    
+.hamburguesa
+    display none
+    img
+        width 32px
+        height 32px
+        position fixed
+        z-index 100
+        right 2.5em
+        top 1.5em
+/*Menu Responsive*/
+/******************************************/ 
+header
+    width 100%
+    height auto
+    position relative
+    z-index 99
+    nav
+        width 100%
+        height 100px
+        position fixed
+        top 0
+        left 0
+        background rgba(color1,.8) 
+        box-sizing border-box
+        #logo
+            img.__logo
+                padding 1.2em 1.9em
+                width 100px
+                float left
+            h2.__title
+                width 27%
+                color darken(color4,5)
+                float left
+                line-height auto
+                text-indent -.2em
+        ul
+            width 50%
+            padding .2em 0
+            float right
+            li
+                display inline-block
+                margin-left 3%
+                a
+                    font-size 1.5em
+                    font-weight 700
+                    color color4
+video
+    width 100%
+    height 100vh   
+    margin 0 auto 10px
+    position absolute
+    background #000
+    z-index 1
+    top 0
+    left 0
+/* Header */
+/****************************************/
+section#nosotros
+    width 100%
+    height 100%
+    margin 100vh auto  0
+    box-sizing border-box
+    background url('../img/nosotros.jpg')
+    background-repeat no-repeat
+    background-size cover
+    .__contenido
+        padding .4em 1em
+    h1
+        text-align center
+    p,h3
+        width 85%
+        margin 15px auto
+/* Nosotros */
+/****************************************/
+#programas
+    .banner-programas
+        ul
+            h2
+                padding 1em
+                font-size 2.5em
+                color color4
+            h3
+                padding 3em 1em 0
+                font-size 2em
+                color color2
+                text-align center
+            p
+                width 60%
+                margin auto
+                padding 1em 1em 0
+            img
+                padding 1em 5em 1em
+        
+/*Programas*/
+/****************************************/
+#galeria
+    margin-bottom 50px
+/*Galeria*/
+/****************************************/
+section#padrino
+    width 100%
+    height 100%
+    margin auto 
+    overflow hidden
+    background-image url(../img/padrino.jpg)
+    background-repeat no-repeat
+    background-size cover
+    h2,h4,p,ul
+        width 30%
+        padding-left 50%
+    h2
+        padding-top 9%
+        font-size 2.6em
+        color color5
+    h4
+        width 40%
+        font-size 1.2em
+        color color4
+    p
+        clear both
+        color #000
+    ul li
+        list-style none
+        padding .1em 0
+/*Plan Padrino*/
+/****************************************/
+footer#contacto
+    .columna1
+        width 35%
+        float left
+        margin-bottom 20px
+    .columna2 
+        width 30%
+        float left
+        margin-bottom 20px
+    width 100%
+    margin 40px auto
+    span
+        display block
+        margin-top .5em
+    h2.__title
+        width 20%
+        float left
+        font-size 2em
+        padding 2em 1em
+        color color2
+    form.__form
+        input[type="text"]
+            width 90%
+            margin-top 1em
+            display inline-block
+            background color7
+            border none
+            padding 1em
+            box-sizing border-box
+            outline none
+        textarea
+            width 98.8%
+            max-width 98%
+            height 100px 
+            margin-top 1em
+            display inline-block
+            background color7
+            border none
+            padding 1em
+            outline none
+            box-sizing border-box
+        input[type="submit"]
+            width 20%
+            margin 1em auto
+            border none
+            font-size 1.2em
+            text-transform uppercase
+            background color6
+            color color4
+            padding .5em 0
+    hr
+        width 95%
+    article.datos__contacto
+        width 50%
+        margin-top 20px
+        padding .5em
+        float left
+        p
+            line-height .8
+    .social
+        display inline-block
+        padding .5em 1em
+        float left
+/* Contacto */
+/***** Fin Estilos Generales Página *****/
+/**********************************************************************************/
+@media only screen and (min-width 1233px) and (max-width 3500px)
+    body
+        font-size 20px
+    
+    #padrino
+        h2
+            padding-top 1% !important
+        h4
+            color color5 !important
+            font-size 1.3em !important
+/* Dispositivos de Escritorio*/
+/**********************************************************************************/
+@media only screen and (min-width 1024px) and (max-width 1232px)
+    body
+        font-size 17px
+    #padrino
+        h2
+            padding-top 2% !important
+        h4
+            color #000 !important
+            font-size 1.3em !important
+/* Dispositivos Medianos  Portátiles*/
+/**********************************************************************************/
+@media only screen and (min-width 939px) and (max-width 1023px)
+    body
+        font-size 16px
+    .unslider-arrow.next
+        display none
+    .unslider-arrow
+        display none
+    header
+        ul
+            width 50% !important
+    #galeria
+        margin-bottom 0px !important
+    #padrino
+        h2
+            padding-top 11% !important
+    .social
+        display inline-block
+        padding .2em 1em
+        float left
+        img
+            width 50px
+/* Dispositivos Medianos  Tabletas*/
+/**********************************************************************************/
+@media only screen and (min-width 620px) and (max-width 849px)
+    .hamburguesa
+        display block 
+    body
+        font-size 12px
+    .unslider-arrow.next
+        display none
+    .unslider-arrow
+        display none
+    header
+        nav
+            height 80px
+        ul
+            // display none
+            width 20% !important
+            margin 85px 0
+            display none
+            z-index 98
+            background color5
+            li
+                display block
+                padding 1em
+                float left
+    #padrino
+        h2
+            padding-top 12% !important
+    .social
+        display inline-block
+        padding .2em 1em
+        float left
+        img
+            width 50px  
+/* Dispositivos Smartphones*/
+/**********************************************************************************/
+@media only screen and (min-width 480px) and (max-width 619px)
+    .hamburguesa
+        display block 
+    body
+        font-size 11px
+    .unslider-arrow.next
+        display none
+    .unslider-arrow
+        display none
+    header
+        nav
+            height 80px
+        ul
+            width 20% !important
+            margin 80px 0
+            display none
+            z-index 98
+            background color5
+            li
+                display block
+                padding 1em  1.2em
+                float left
+    #padrino
+        height 350px !important
+        h2
+            padding-top 0% !important
+        h4
+            color color5 !important
+    article.datos__contacto
+        width 100% !important
+        padding .5em !important
+        p
+            line-height 1 !important
+    .social
+        display inline-block
+        padding 1em 1em !important
+        float left
+        img
+            width 50px  
+/* Dispositivos Smartphones*/
+/**********************************************************************************/
+@media only screen and (min-width 100px) and (max-width 479px)
+    .hamburguesa
+        display block 
+    body
+        font-size 11px
+    .unslider-arrow.next
+        display none
+    .unslider-arrow
+        display none
+    header
+        nav
+            height 80px
+            #logo
+                img
+                    width 70px !important
+                h2
+                    font-size 1.5em
+                    
+        ul
+            width 30% !important
+            margin-top 80px
+            display none 
+            z-index 98
+            background color5
+            li
+                display block  
+                // float left
+                padding 1em
+    #padrino
+        height auto !important
+        background none !important
+        h2,h4,p,ul
+            width 80% !important
+            padding-left 2% !important
+        h2
+            font-size 1.6em
+            color color5
+        h4
+            font-size 1.2em
+            color #000 !important
+        ul li
+            list-style none
+            padding .1em 0
+        
+    article.datos__contacto
+        width 100% !important
+        padding .5em !important
+        p
+            line-height 1 !important
+    .social
+        display inline-block
+        padding 1em 1em !important
+        float left
+        img
+            width 50px
+    footer#contacto
+        .columna1
+            width 100%
+            float left
+            margin-bottom 20px
+        .columna2 
+            width 100%
+            float left
+            margin-bottom 20px
+            width 100%
+            margin 40px auto
+        h2.__title
+            width 100%
+            float left
+            font-size 2em
+            padding 0em 0em
+            text-align center
+            color color2
+        span
+            display block
+            margin-top .5em
+    input,textarea
+        display block !important
+        width 98% !important 
+/* Dispositivos Smartphones*/
+/*Media Queries*/
+   

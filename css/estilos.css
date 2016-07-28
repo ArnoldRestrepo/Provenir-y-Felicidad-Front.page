@@ -1,0 +1,587 @@
+@font-face {
+  font-family: 'Lemon Yellow';
+  src: url("../fonts/DKLemonYellowSun.otf") format('opentype');
+}
+@font-face {
+  font-family: 'Avant Garde';
+  src: url("../fonts/AvantGardeMdBT.ttf") format('truetype');
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-size0: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lemon Yellow', sans-serif;
+}
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.3em;
+}
+h4 {
+  font-size: 1em;
+}
+h5 {
+  font-size: 0.9em;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+  font-family: 'Lemon Yellow', sans-serif;
+}
+form {
+  font-size: 'Lemon Yellow', sans-serif;
+}
+#programas,
+#galeria {
+  overflow-y: hidden;
+}
+.banner-programas,
+.banner-imagenes {
+  position: relative;
+  width: 100% !important;
+  overflow: auto;
+  overflow-y: hidden;
+  padding: 0;
+  margin: 0;
+}
+.banner-programas,
+.banner-imagenes ul {
+  padding: 0;
+  margin: 0;
+}
+.banner-programas,
+.banner-imagenes li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.banner-programas ul hr {
+  width: 60%;
+  margin: 1em auto 0;
+  border: 0.5px solid #000;
+}
+.banner-imagenes ul li {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-programas {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -75px;
+}
+/* Estilos Fundación Porvenir y Felicidad */
+#container {
+  width: 100%;
+  max-width: 2000px;
+  height: auto;
+  margin: 0 auto;
+}
+/* Contenedor General*/
+/******************************************/
+.hamburguesa {
+  display: none;
+}
+.hamburguesa img {
+  width: 32px;
+  height: 32px;
+  position: fixed;
+  z-index: 100;
+  right: 2.5em;
+  top: 1.5em;
+}
+/*Menu Responsive*/
+/******************************************/
+header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 99;
+}
+header nav {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(223,145,140,0.8);
+  box-sizing: border-box;
+}
+header nav #logo img.__logo {
+  padding: 1.2em 1.9em;
+  width: 100px;
+  float: left;
+}
+header nav #logo h2.__title {
+  width: 27%;
+  color: #f2f2f2;
+  float: left;
+  line-height: auto;
+  text-indent: -0.2em;
+}
+header nav ul {
+  width: 50%;
+  padding: 0.2em 0;
+  float: right;
+}
+header nav ul li {
+  display: inline-block;
+  margin-left: 3%;
+}
+header nav ul li a {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #fff;
+}
+video {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto 10px;
+  position: absolute;
+  background: #000;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+/* Header */
+/****************************************/
+section#nosotros {
+  width: 100%;
+  height: 100%;
+  margin: 100vh auto 0;
+  box-sizing: border-box;
+  background: url("../img/nosotros.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section#nosotros .__contenido {
+  padding: 0.4em 1em;
+}
+section#nosotros h1 {
+  text-align: center;
+}
+section#nosotros p,
+section#nosotros h3 {
+  width: 85%;
+  margin: 15px auto;
+}
+/* Nosotros */
+/****************************************/
+#programas .banner-programas ul h2 {
+  padding: 1em;
+  font-size: 2.5em;
+  color: #fff;
+}
+#programas .banner-programas ul h3 {
+  padding: 3em 1em 0;
+  font-size: 2em;
+  color: #94be37;
+  text-align: center;
+}
+#programas .banner-programas ul p {
+  width: 60%;
+  margin: auto;
+  padding: 1em 1em 0;
+}
+#programas .banner-programas ul img {
+  padding: 1em 5em 1em;
+}
+/*Programas*/
+/****************************************/
+#galeria {
+  margin-bottom: 50px;
+}
+/*Galeria*/
+/****************************************/
+section#padrino {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  background-image: url("../img/padrino.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section#padrino h2,
+section#padrino h4,
+section#padrino p,
+section#padrino ul {
+  width: 30%;
+  padding-left: 50%;
+}
+section#padrino h2 {
+  padding-top: 9%;
+  font-size: 2.6em;
+  color: #449fc1;
+}
+section#padrino h4 {
+  width: 40%;
+  font-size: 1.2em;
+  color: #fff;
+}
+section#padrino p {
+  clear: both;
+  color: #000;
+}
+section#padrino ul li {
+  list-style: none;
+  padding: 0.1em 0;
+}
+/*Plan Padrino*/
+/****************************************/
+footer#contacto {
+  width: 100%;
+  margin: 40px auto;
+}
+footer#contacto .columna1 {
+  width: 35%;
+  float: left;
+  margin-bottom: 20px;
+}
+footer#contacto .columna2 {
+  width: 30%;
+  float: left;
+  margin-bottom: 20px;
+}
+footer#contacto span {
+  display: block;
+  margin-top: 0.5em;
+}
+footer#contacto h2.__title {
+  width: 20%;
+  float: left;
+  font-size: 2em;
+  padding: 2em 1em;
+  color: #94be37;
+}
+footer#contacto form.__form input[type="text"] {
+  width: 90%;
+  margin-top: 1em;
+  display: inline-block;
+  background: #d0e6aa;
+  border: none;
+  padding: 1em;
+  box-sizing: border-box;
+  outline: none;
+}
+footer#contacto form.__form textarea {
+  width: 98.8%;
+  max-width: 98%;
+  height: 100px;
+  margin-top: 1em;
+  display: inline-block;
+  background: #d0e6aa;
+  border: none;
+  padding: 1em;
+  outline: none;
+  box-sizing: border-box;
+}
+footer#contacto form.__form input[type="submit"] {
+  width: 20%;
+  margin: 1em auto;
+  border: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background: #b74872;
+  color: #fff;
+  padding: 0.5em 0;
+}
+footer#contacto hr {
+  width: 95%;
+}
+footer#contacto article.datos__contacto {
+  width: 50%;
+  margin-top: 20px;
+  padding: 0.5em;
+  float: left;
+}
+footer#contacto article.datos__contacto p {
+  line-height: 0.8;
+}
+footer#contacto .social {
+  display: inline-block;
+  padding: 0.5em 1em;
+  float: left;
+}
+/* Contacto */
+/***** Fin Estilos Generales Página *****/
+/**********************************************************************************/
+@media only screen and (min-width: 1233px) and (max-width: 3500px) {
+  body {
+    font-size: 20px;
+  }
+  #padrino h2 {
+    padding-top: 1% !important;
+  }
+  #padrino h4 {
+    color: #449fc1 !important;
+    font-size: 1.3em !important;
+  }
+}
+/* Dispositivos de Escritorio*/
+/**********************************************************************************/
+@media only screen and (min-width: 1024px) and (max-width: 1232px) {
+  body {
+    font-size: 17px;
+  }
+  #padrino h2 {
+    padding-top: 2% !important;
+  }
+  #padrino h4 {
+    color: #000 !important;
+    font-size: 1.3em !important;
+  }
+}
+/* Dispositivos Medianos  Portátiles*/
+/**********************************************************************************/
+@media only screen and (min-width: 939px) and (max-width: 1023px) {
+  body {
+    font-size: 16px;
+  }
+  .unslider-arrow.next {
+    display: none;
+  }
+  .unslider-arrow {
+    display: none;
+  }
+  header ul {
+    width: 50% !important;
+  }
+  #galeria {
+    margin-bottom: 0px !important;
+  }
+  #padrino h2 {
+    padding-top: 11% !important;
+  }
+  .social {
+    display: inline-block;
+    padding: 0.2em 1em;
+    float: left;
+  }
+  .social img {
+    width: 50px;
+  }
+}
+/* Dispositivos Medianos  Tabletas*/
+/**********************************************************************************/
+@media only screen and (min-width: 620px) and (max-width: 849px) {
+  .hamburguesa {
+    display: block;
+  }
+  body {
+    font-size: 12px;
+  }
+  .unslider-arrow.next {
+    display: none;
+  }
+  .unslider-arrow {
+    display: none;
+  }
+  header nav {
+    height: 80px;
+  }
+  header ul {
+    width: 20% !important;
+    margin: 85px 0;
+    display: none;
+    z-index: 98;
+    background: #449fc1;
+  }
+  header ul li {
+    display: block;
+    padding: 1em;
+    float: left;
+  }
+  #padrino h2 {
+    padding-top: 12% !important;
+  }
+  .social {
+    display: inline-block;
+    padding: 0.2em 1em;
+    float: left;
+  }
+  .social img {
+    width: 50px;
+  }
+}
+/* Dispositivos Smartphones*/
+/**********************************************************************************/
+@media only screen and (min-width: 480px) and (max-width: 619px) {
+  .hamburguesa {
+    display: block;
+  }
+  body {
+    font-size: 11px;
+  }
+  .unslider-arrow.next {
+    display: none;
+  }
+  .unslider-arrow {
+    display: none;
+  }
+  header nav {
+    height: 80px;
+  }
+  header ul {
+    width: 20% !important;
+    margin: 80px 0;
+    display: none;
+    z-index: 98;
+    background: #449fc1;
+  }
+  header ul li {
+    display: block;
+    padding: 1em 1.2em;
+    float: left;
+  }
+  #padrino {
+    height: 350px !important;
+  }
+  #padrino h2 {
+    padding-top: 0% !important;
+  }
+  #padrino h4 {
+    color: #449fc1 !important;
+  }
+  article.datos__contacto {
+    width: 100% !important;
+    padding: 0.5em !important;
+  }
+  article.datos__contacto p {
+    line-height: 1 !important;
+  }
+  .social {
+    display: inline-block;
+    padding: 1em 1em !important;
+    float: left;
+  }
+  .social img {
+    width: 50px;
+  }
+}
+/* Dispositivos Smartphones*/
+/**********************************************************************************/
+@media only screen and (min-width: 100px) and (max-width: 479px) {
+  .hamburguesa {
+    display: block;
+  }
+  body {
+    font-size: 11px;
+  }
+  .unslider-arrow.next {
+    display: none;
+  }
+  .unslider-arrow {
+    display: none;
+  }
+  header nav {
+    height: 80px;
+  }
+  header nav #logo img {
+    width: 70px !important;
+  }
+  header nav #logo h2 {
+    font-size: 1.5em;
+  }
+  header ul {
+    width: 30% !important;
+    margin-top: 80px;
+    display: none;
+    z-index: 98;
+    background: #449fc1;
+  }
+  header ul li {
+    display: block;
+    padding: 1em;
+  }
+  #padrino {
+    height: auto !important;
+    background: none !important;
+  }
+  #padrino h2,
+  #padrino h4,
+  #padrino p,
+  #padrino ul {
+    width: 80% !important;
+    padding-left: 2% !important;
+  }
+  #padrino h2 {
+    font-size: 1.6em;
+    color: #449fc1;
+  }
+  #padrino h4 {
+    font-size: 1.2em;
+    color: #000 !important;
+  }
+  #padrino ul li {
+    list-style: none;
+    padding: 0.1em 0;
+  }
+  article.datos__contacto {
+    width: 100% !important;
+    padding: 0.5em !important;
+  }
+  article.datos__contacto p {
+    line-height: 1 !important;
+  }
+  .social {
+    display: inline-block;
+    padding: 1em 1em !important;
+    float: left;
+  }
+  .social img {
+    width: 50px;
+  }
+  footer#contacto .columna1 {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+  }
+  footer#contacto .columna2 {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+    margin: 40px auto;
+  }
+  footer#contacto h2.__title {
+    width: 100%;
+    float: left;
+    font-size: 2em;
+    padding: 0em 0em;
+    text-align: center;
+    color: #94be37;
+  }
+  footer#contacto span {
+    display: block;
+    margin-top: 0.5em;
+  }
+  input,
+  textarea {
+    display: block !important;
+    width: 98% !important;
+  }
+}
+/* Dispositivos Smartphones*/
+/*Media Queries*/

@@ -1,0 +1,75 @@
+// Variables para el desarrollo del sitio web
+     // Fonts
+    // Fuentes para los títulos
+        @font-face
+            font-family 'Lemon Yellow'
+            src url('../fonts/DKLemonYellowSun.otf')format('opentype')
+    // Fuentes para los textos
+        @font-face
+            font-family 'Avant Garde'
+            src url('../fonts/AvantGardeMdBT.ttf')format('truetype')
+    //  Variables del Tema
+
+    //  Paleta de Colores
+        color1  = rgba(#df918c) // Rosa
+        color2  = #94be37 // Verde
+        color3  = #575757 // gris(textos)
+        color4 = #fff // Blanco
+        color5 = #449fc1 // Azul
+        color6 = #b74872 // Rosado
+        color7 = #d0e6aa // Verde Agua
+        
+    // Estilos Base
+        body--background  = #fff // Color Fondo
+        body--font-family = 'Open Sans', sans-serif // Fuentes Determinadas
+        body--color       = #333 // color de texto predeterminado
+         
+    // Estilos de encabezados
+        header--font-family = 'Lemon Yellow', sans-serif // Fuentes para todos los niveles de texto
+        header--font-weight = bold               // Grosor de los títulos    
+        header--text-transform = normal          // normal, uppercase, etc
+        header--color = #111                     // color de la fuente
+        
+        h1--font-size = 2em
+        h2--font-size = 1.6em
+        h3--font-size = 1.3em
+        h4--font-size = 1em
+        h5--font-size = .9em
+        h6--font-size = .8em
+    
+    // Estilos de enlaces
+        link--color = blue
+        link--font-family = 'Lemon Yellow', sans-serif
+
+body{
+    margin 0 auto
+    padding 0
+    box-sizing border-box
+    font-size0 16px
+}
+
+// texto
+h1,h2,h3,h4,h5,h6
+    font-family header--font-family
+h1
+    font-size h1--font-size
+    font-weight header--font-weight
+h2
+    font-size h2--font-size
+    font-weight header--font-weight
+h3
+    font-size h3--font-size
+h4
+    font-size h4--font-size
+h5
+    font-size h5--font-size
+// Párrafos
+p
+    font-family body--font-family
+// enlaces
+a
+    text-decoration none
+    font-family link--font-family
+// Formulario
+form
+    font-size link--font-family
